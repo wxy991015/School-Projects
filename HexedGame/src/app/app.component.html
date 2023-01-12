@@ -1,0 +1,25 @@
+<div id="bodyblock">
+    <h1>HEXED GAME</h1>
+
+    <app-name></app-name>
+
+    <app-timer></app-timer>
+
+    <app-color></app-color>
+
+    <p>Red Slider</p>
+    <app-slider (newSliderEvent)=sldrR($event)></app-slider>
+    <p id="redSlider"></p>
+
+    <p>Blue Slider</p>
+    <app-slider (newSliderEvent)=sldrB($event)></app-slider>
+    <p id="blueSlider"></p>
+
+    <p>Green Slider</p>
+    <app-slider (newSliderEvent)=sldrG($event)></app-slider>
+    <p id="greenSlider"></p>
+
+    <button>Guess</button>
+
+    <router-outlet></router-outlet>
+</div>
