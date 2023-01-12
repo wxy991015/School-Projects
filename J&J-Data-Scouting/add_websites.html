@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Team 4 Project</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="project.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href='https://fonts.googleapis.com/css?family=Montaga' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="add_websites.js"></script>
+        <script src="FormHandling.js"></script>
+    </head>
+
+    <body>
+        <div id="background">
+
+            <div id="logo" class="w-25">
+                <img src="Resources/johnson-and-johnson.png" class="img-fluid" alt="J&J Primary Logo">
+            </div>
+            <div class="navbar">
+                <a href="search_websites.html">Search Websites</a>
+                <a href="add_websites.html">Add Websites</a>
+            </div>
+            
+            <div class="add_website">
+                <div class="container">
+                    <div style="display: none;" class="alert alert-success" id="successAdd">
+                        <strong>Success!</strong> The new website is added successfully.
+                    </div>
+                    <div style="display: none;" class="alert alert-danger" id="failAdd">
+                        <strong>Warning!</strong> The website is already in the existing dataset.
+                    </div>
+                    <h2>Add Website(s)</h2>
+                    <h4 style="font-family: Sans-serif; font-weight: bolder;">Add one single website</h4>
+                    <p style="font-family: Sans-serif; font-weight: bolder;">Please input the comapny name and company website link you would like to add</p>
+                        <form name="myForm" action="" class="needs-validation was-validated" onsubmit="return validateForm()" method="post">
+                          <div class="mb-3 mt-3">
+                            <label for="company_name" class="form-label">Comapny Name:</label>
+                            <input type="text" class="form-control" id="company_name" placeholder="Enter company name" name="company_name" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="website_link" class="form-label">Company Website:</label>
+                            <input type="url" class="form-control" id="company_website" placeholder="Enter company website link" name="company_website" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="comment">Other Comments (optional): </label>
+                            <textarea class="form-control" rows="5" id="comments"></textarea>
+                          </div>
+                          <button type="submit" style="background-color: red; color: white; font-family: sans-serif" class="w3-button w3-round-xlarge">Add Website</button>
+                        </form>
+                </div><br/>
+                <br/>
+                <div class="add_multiple_websites">
+                    <h4>Want to add multiple websites at a time?</h4>
+                    <p>You can upload an .xlsx or .csv file here to add multiple websites</p>
+                    <form action="" name="fileUpload" class="file_upload" onsubmit="return validateFileUpload()" method="post" target="_blank">
+                        <label class="control-label">File Upload</label>
+                        <input type="file" id="myfile" name="filename" required>
+                        <button type="submit" value="Submit" style="background-color: red; color: white; font-family: sans-serif" class="w3-button w3-round-xlarge" id="multiSubmit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

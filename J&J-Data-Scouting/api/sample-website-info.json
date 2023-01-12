@@ -1,0 +1,858 @@
+{
+    "website_data_Priority Ambulance LLC": [
+        {
+            "company_name": "Priority Ambulance LLC",
+            "website_url": "https://www.priorityambulance.com",
+            "key_indications": [
+                [
+                    "vaccination",
+                    94,
+                    0.718
+                ],
+                [
+                    "aging",
+                    15,
+                    0.115
+                ],
+                [
+                    "injury",
+                    4,
+                    0.031
+                ],
+                [
+                    "epilepsy",
+                    3,
+                    0.023
+                ],
+                [
+                    "vascular disease",
+                    3,
+                    0.023
+                ],
+                [
+                    "diabetes mellitus",
+                    3,
+                    0.023
+                ],
+                [
+                    "cardiac arrest",
+                    2,
+                    0.015
+                ],
+                [
+                    "stroke",
+                    1,
+                    0.008
+                ],
+                [
+                    "fatigue",
+                    1,
+                    0.008
+                ],
+                [
+                    "infectious disease",
+                    1,
+                    0.008
+                ],
+                [
+                    "pain",
+                    1,
+                    0.008
+                ],
+                [
+                    "shock",
+                    1,
+                    0.008
+                ],
+                [
+                    "ventricular fibrillation",
+                    1,
+                    0.008
+                ],
+                [
+                    "bleeding",
+                    1,
+                    0.008
+                ]
+            ],
+            "key_target": [],
+            "key_technologies": [
+                [
+                    "solution",
+                    27,
+                    1.0
+                ]
+            ]
+        }
+    ],
+    "website_data_Labmaster OY": [
+        {
+            "company_name": "Labmaster OY",
+            "website_url": "http://www.labmaster.fi",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_ADCendo ApS": [
+        {
+            "company_name": "ADCendo ApS",
+            "website_url": "https://adcendo.com",
+            "key_indications": [
+                [
+                    "cancer",
+                    29,
+                    0.58
+                ],
+                [
+                    "glioblastoma",
+                    4,
+                    0.08
+                ],
+                [
+                    "osteosarcoma",
+                    4,
+                    0.08
+                ],
+                [
+                    "sarcoma",
+                    4,
+                    0.08
+                ],
+                [
+                    "leukemia",
+                    3,
+                    0.06
+                ],
+                [
+                    "aging",
+                    2,
+                    0.04
+                ],
+                [
+                    "allergy",
+                    1,
+                    0.02
+                ],
+                [
+                    "solid tumor",
+                    1,
+                    0.02
+                ],
+                [
+                    "mesothelioma",
+                    1,
+                    0.02
+                ],
+                [
+                    "soft tissue sarcoma",
+                    1,
+                    0.02
+                ]
+            ],
+            "key_target": [],
+            "key_technologies": [
+                [
+                    "antibody",
+                    13,
+                    0.812
+                ],
+                [
+                    "antibody drug conjugate",
+                    2,
+                    0.125
+                ],
+                [
+                    "solution",
+                    1,
+                    0.062
+                ]
+            ]
+        }
+    ],
+    "website_data_Elucidata Corp": [
+        {
+            "company_name": "Elucidata Corp",
+            "website_url": "http://www.elucidata.io",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_Cognixion": [
+        {
+            "company_name": "Cognixion",
+            "website_url": "https://www.cognixion.com",
+            "key_indications": [
+                [
+                    "cerebral palsy",
+                    23,
+                    0.168
+                ],
+                [
+                    "autism",
+                    16,
+                    0.117
+                ],
+                [
+                    "aging",
+                    13,
+                    0.095
+                ],
+                [
+                    "stroke",
+                    13,
+                    0.095
+                ],
+                [
+                    "multiple sclerosis",
+                    11,
+                    0.08
+                ],
+                [
+                    "pneumonia",
+                    9,
+                    0.066
+                ],
+                [
+                    "brain injury",
+                    9,
+                    0.066
+                ],
+                [
+                    "cancer",
+                    9,
+                    0.066
+                ],
+                [
+                    "down syndrome",
+                    9,
+                    0.066
+                ],
+                [
+                    "injury",
+                    9,
+                    0.066
+                ],
+                [
+                    "traumatic brain injury",
+                    9,
+                    0.066
+                ],
+                [
+                    "communication disorder",
+                    3,
+                    0.022
+                ],
+                [
+                    "bleeding",
+                    2,
+                    0.015
+                ],
+                [
+                    "ptosis",
+                    1,
+                    0.007
+                ],
+                [
+                    "mild cognitive impairment",
+                    1,
+                    0.007
+                ]
+            ],
+            "key_target": [],
+            "key_technologies": [
+                [
+                    "solution",
+                    93,
+                    0.861
+                ],
+                [
+                    "eeg",
+                    12,
+                    0.111
+                ],
+                [
+                    "imaging",
+                    3,
+                    0.028
+                ]
+            ]
+        }
+    ],
+    "website_data_Gyros Protein Technologies AB": [
+        {
+            "company_name": "Gyros Protein Technologies AB",
+            "website_url": "http://www.gyrosproteintechnologies.com",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_Coherex Medical Inc": [
+        {
+            "company_name": "Coherex Medical Inc",
+            "website_url": "http://www.coherex.com",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_Barton Nelson Inc": [
+        {
+            "company_name": "Barton Nelson Inc",
+            "website_url": "http://www.bebco.com",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_Avera Pharmaceuticals Inc": [
+        {
+            "company_name": "Avera Pharmaceuticals Inc",
+            "website_url": "http://arevapharma.com",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_Istituti Clinici Scientifici Maugeri Spa Sb": [
+        {
+            "company_name": "Istituti Clinici Scientifici Maugeri Spa Sb",
+            "website_url": "https://www.icsmaugeri.it",
+            "key_indications": [
+                [
+                    "angioedema",
+                    1,
+                    0.2
+                ],
+                [
+                    "edema",
+                    1,
+                    0.2
+                ],
+                [
+                    "syncope",
+                    1,
+                    0.2
+                ],
+                [
+                    "carcinoma",
+                    1,
+                    0.2
+                ],
+                [
+                    "ulcer",
+                    1,
+                    0.2
+                ]
+            ],
+            "key_target": [],
+            "key_technologies": [
+                [
+                    "elisa",
+                    6,
+                    0.5
+                ],
+                [
+                    "lipid",
+                    4,
+                    0.333
+                ],
+                [
+                    "ecg",
+                    1,
+                    0.083
+                ],
+                [
+                    "infusion",
+                    1,
+                    0.083
+                ]
+            ]
+        }
+    ],
+    "website_data_Sleepiz AG": [
+        {
+            "company_name": "Sleepiz AG",
+            "website_url": "http://www.sleepiz.com",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_Kilolambda Technologies Ltd": [
+        {
+            "company_name": "Kilolambda Technologies Ltd",
+            "website_url": "http://www.kilolambda.com",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_Ceres Technologies Inc": [
+        {
+            "company_name": "Ceres Technologies Inc",
+            "website_url": "http://cerestechnologies.com",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_Cyvera Corp": [
+        {
+            "company_name": "Cyvera Corp",
+            "website_url": "http://www.illumina.com",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_Listem Corp": [
+        {
+            "company_name": "Listem Corp",
+            "website_url": "http://www.listem.co.kr",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_Omega Pharma NV": [
+        {
+            "company_name": "Omega Pharma NV",
+            "website_url": "https://www.omega-pharma.com",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_Perfuse Therapeutics Inc": [
+        {
+            "company_name": "Perfuse Therapeutics Inc",
+            "website_url": "http://perfusetherapeutics.com",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_MiLibris": [
+        {
+            "company_name": "MiLibris",
+            "website_url": "http://milibris.com",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_Astex Therapeutics Ltd": [
+        {
+            "company_name": "Astex Therapeutics Ltd",
+            "website_url": "https://astx.com",
+            "key_indications": [
+                [
+                    "cancer",
+                    34,
+                    0.354
+                ],
+                [
+                    "leukemia",
+                    6,
+                    0.062
+                ],
+                [
+                    "neurodegenerative disease",
+                    5,
+                    0.052
+                ],
+                [
+                    "dementia",
+                    5,
+                    0.052
+                ],
+                [
+                    "ptosis",
+                    5,
+                    0.052
+                ],
+                [
+                    "lymphoma",
+                    5,
+                    0.052
+                ],
+                [
+                    "myeloid leukemia",
+                    5,
+                    0.052
+                ],
+                [
+                    "carcinoma",
+                    3,
+                    0.031
+                ],
+                [
+                    "advanced solid tumor",
+                    3,
+                    0.031
+                ],
+                [
+                    "solid tumor",
+                    3,
+                    0.031
+                ],
+                [
+                    "myelodysplastic syndrome",
+                    3,
+                    0.031
+                ],
+                [
+                    "metastatic breast cancer",
+                    2,
+                    0.021
+                ],
+                [
+                    "t-cell lymphoma",
+                    2,
+                    0.021
+                ],
+                [
+                    "chronic myelomonocytic leukemia",
+                    2,
+                    0.021
+                ],
+                [
+                    "frontotemporal dementia",
+                    1,
+                    0.01
+                ],
+                [
+                    "viral infection",
+                    1,
+                    0.01
+                ],
+                [
+                    "adenocarcinoma",
+                    1,
+                    0.01
+                ],
+                [
+                    "fallopian tube cancer",
+                    1,
+                    0.01
+                ],
+                [
+                    "bladder cancer",
+                    1,
+                    0.01
+                ],
+                [
+                    "cholangiocarcinoma",
+                    1,
+                    0.01
+                ],
+                [
+                    "hepatocellular carcinoma",
+                    1,
+                    0.01
+                ],
+                [
+                    "multiple myeloma",
+                    1,
+                    0.01
+                ],
+                [
+                    "non-hodgkin lymphoma",
+                    1,
+                    0.01
+                ],
+                [
+                    "death",
+                    1,
+                    0.01
+                ],
+                [
+                    "cutaneous t-cell lymphoma",
+                    1,
+                    0.01
+                ],
+                [
+                    "peripheral t-cell lymphoma",
+                    1,
+                    0.01
+                ],
+                [
+                    "aging",
+                    1,
+                    0.01
+                ]
+            ],
+            "key_target": [
+                [
+                    "aromatase inhibitor",
+                    2,
+                    0.667
+                ],
+                [
+                    "parp inhibitor",
+                    1,
+                    0.333
+                ]
+            ],
+            "key_technologies": [
+                [
+                    "solution",
+                    2,
+                    0.333
+                ],
+                [
+                    "assay",
+                    1,
+                    0.167
+                ],
+                [
+                    "spectroscopy",
+                    1,
+                    0.167
+                ],
+                [
+                    "microscopy",
+                    1,
+                    0.167
+                ],
+                [
+                    "formulation",
+                    1,
+                    0.167
+                ]
+            ]
+        }
+    ],
+    "website_data_Korozo Ambalaj Sanayi Ve Ticaret Anonim Sirketi": [
+        {
+            "company_name": "Korozo Ambalaj Sanayi Ve Ticaret Anonim Sirketi",
+            "website_url": "http://www.korozo.com.tr",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_PointCare Technologies Inc": [
+        {
+            "company_name": "PointCare Technologies Inc",
+            "website_url": "http://www.pointcaretechnologies.com",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_Micro-Biolytics GmbH": [
+        {
+            "company_name": "Micro-Biolytics GmbH",
+            "website_url": "http://micro-biolytics.com",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_Phoseon Technology Inc": [
+        {
+            "company_name": "Phoseon Technology Inc",
+            "website_url": "https://phoseon.com",
+            "key_indications": [
+                [
+                    "aging",
+                    6,
+                    0.857
+                ],
+                [
+                    "shock",
+                    1,
+                    0.143
+                ]
+            ],
+            "key_target": [],
+            "key_technologies": [
+                [
+                    "solution",
+                    65,
+                    0.855
+                ],
+                [
+                    "drying",
+                    5,
+                    0.066
+                ],
+                [
+                    "imaging",
+                    2,
+                    0.026
+                ],
+                [
+                    "formulation",
+                    2,
+                    0.026
+                ],
+                [
+                    "microscopy",
+                    1,
+                    0.013
+                ],
+                [
+                    "fluorescence",
+                    1,
+                    0.013
+                ]
+            ]
+        }
+    ],
+    "website_data_Inoviscoat Gmbh": [
+        {
+            "company_name": "Inoviscoat Gmbh",
+            "website_url": "http://www.inoviscoat.de",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_Shape Security Inc": [
+        {
+            "company_name": "Shape Security Inc",
+            "website_url": "https://www.shapesecurity.com",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_Nomad Health": [
+        {
+            "company_name": "Nomad Health",
+            "website_url": "https://nomadhealth.com",
+            "key_indications": [
+                [
+                    "vaccination",
+                    16,
+                    0.516
+                ],
+                [
+                    "death",
+                    8,
+                    0.258
+                ],
+                [
+                    "aging",
+                    2,
+                    0.065
+                ],
+                [
+                    "hepatitis",
+                    1,
+                    0.032
+                ],
+                [
+                    "infectious disease",
+                    1,
+                    0.032
+                ],
+                [
+                    "confusion",
+                    1,
+                    0.032
+                ],
+                [
+                    "cancer",
+                    1,
+                    0.032
+                ],
+                [
+                    "heart disease",
+                    1,
+                    0.032
+                ]
+            ],
+            "key_target": [],
+            "key_technologies": [
+                [
+                    "solution",
+                    22,
+                    1.0
+                ]
+            ]
+        }
+    ],
+    "website_data_Unnatural Products Inc": [
+        {
+            "company_name": "Unnatural Products Inc",
+            "website_url": "https://www.unnaturalproducts.com",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": [
+                [
+                    "natural product",
+                    2,
+                    0.667
+                ],
+                [
+                    "peptide",
+                    1,
+                    0.333
+                ]
+            ]
+        }
+    ],
+    "website_data_Biobest Belgium NV": [
+        {
+            "company_name": "Biobest Belgium NV",
+            "website_url": "https://www.biobestgroup.com",
+            "key_indications": [
+                [
+                    "aging",
+                    3,
+                    1.0
+                ]
+            ],
+            "key_target": [],
+            "key_technologies": [
+                [
+                    "solution",
+                    14,
+                    1.0
+                ]
+            ]
+        }
+    ],
+    "website_data_Focalspec Oy": [
+        {
+            "company_name": "Focalspec Oy",
+            "website_url": "http://www.focalspec.com",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_Applied Quantum Technology Llc": [
+        {
+            "company_name": "Applied Quantum Technology Llc",
+            "website_url": "http://www.aqtsolar.com",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_Optiscan Biomedical Corp": [
+        {
+            "company_name": "Optiscan Biomedical Corp",
+            "website_url": "http://optiscancorp.com",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ],
+    "website_data_Pic Therapeutics": [
+        {
+            "company_name": "Pic Therapeutics",
+            "website_url": "https://www.pictherapeutics.com",
+            "key_indications": [],
+            "key_target": [],
+            "key_technologies": []
+        }
+    ]
+}

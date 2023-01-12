@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Team 4 Project</title>
+        <link rel="stylesheet" href="project.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href='https://fonts.googleapis.com/css?family=Montaga' rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="datatables.min.css"/>
+        <link rel="stylesheet" type="text/css" href="datatables.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.0.1/css/buttons.dataTables.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+        <script type="text/javascript" src="datatables.min.js"></script> 
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.print.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.html5.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+        <script src="search_websites.js"></script>
+        <script src="website_output.js"></script>
+        <script src="sortTable.js"></script>
+    </head>
+
+    <body>
+        <div id="background">
+            <div id="logo" class="w-25">
+                <img src="Resources/johnson-and-johnson.png" class="img-fluid" alt="J&J Primary Logo">
+            </div>
+            <div class="navbar">
+                <a href="search_websites.html">Search Websites</a>
+                <a href="add_websites.html">Add Websites</a>
+            </div>
+            
+            <div id="example_wrapper" class="dataTables_wrappers w3-container">
+                <div class="">
+                    <!--dt-buttons-->
+                    <button style="background-color: red; color: #fff; font-family: sans-serif" class="buttons-excel w3-button w3-round-xlarge" onclick='ExportToExcel("xlsx")' tabindex="0" aria-controls="example" type="button">
+                        <span>Excel (.xlsx)</span> 
+                        <!--dt-button buttons-excel-->
+                    </button>
+                    <button style="background-color: red; color: #fff; font-family: sans-serif" id="download-button" class="buttons-csv w3-button w3-round-xlarge" tabindex="1" aria-controls="example" type="button">
+                        <span>Excel (.csv)</span> 
+                    </button>
+                </div>
+            
+                <table id="example" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Company Name</th>
+                            <th>Key Indications</th>
+                            <th>Key Target-based Actions</th>
+                            <th>Key Technologies</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Arthrosurface Inc</td>
+                            <td>
+                                <ul>
+                                    <li>Barretts esophagus</li>
+                                    <li>Behcets disease</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Edinburgh</li>
+                                    <li>Accountant</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Viral therapy</li>
+                                    <li>Virus recombinant</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Auron Therapeutics Inc</td>
+                            <td>
+                                <ul>
+                                    <li>Bipolar disorder</li>
+                                    <li>Cervical dystonia</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>5-HT receptor agonist</li>
+                                    <li>AAA ATPase modulator</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Adipose stem cell therapy</li>
+                                    <li>Antibiotic resistance</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Bacilligen Inc</td>
+                            <td>
+                                <ul>
+                                    <li>Cholelithiasis</li>
+                                    <li>Cholesteatoma</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <li>Acetylcholinesterase inhibitor</li>
+                                <li>Adenosine A3 receptor antagonist</li>
+                            </td>
+                            <td>
+                                <li>Transduction</li>
+                                <li>Transplantation technology</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Balance Therapeutics Inc</td>
+                            <td>
+                                <ul>
+                                    <li>Diabetic nephropathy</li>
+                                    <li>Diamond Blackfan anemia</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Carboxypeptidase stimulator</li>
+                                    <li>Casein kinase II alpha modulator</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Intrathecal formulation</li>
+                                    <li>Isolation technology</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Beijing Gridsum Technology Co Ltd</td>
+                            <td>
+                                <ul>
+                                    <li>Drug dependence</li>
+                                    <li>Duodenal ulcer</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Caspase-9 stimulator</li>
+                                    <li>Dynamin like protein 1 modulator</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <li>Steroid</li>
+                                <li>Suspension</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>21st Century Oncology</td>
+                            <td>
+                                <ul>
+                                    <li>Site-directed mutagenesis</li>
+                                    <li>Spectroanalysis</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>X-linked inhibitor of apoptosis protein inhibitor</li>
+                                    <li>Vitamin D binding protein modulator</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Recombinant polyclonal antibody therapy</li>
+                                    <li>Rectal gel formulation</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Aarden Pharmaceuticals Inc</td>
+                            <td>
+                                <ul>
+                                    <li>Drug overdose</li>
+                                    <li>Dupuytren contracture</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Voltage gated sodium channel modulator</li>
+                                    <li>Very low density lipoprotein receptor modulator</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Radioimmunodetection</li>
+                                    <li>Protein engineering</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Chaperone Technologies Inc</td>
+                            <td>
+                                <ul>
+                                    <li>Dyskeratosis congenita</li>
+                                    <li>End stage renal disease</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>VEGF-2 receptor antagonist</li>
+                                    <li>VEGF-3 receptor antagonist</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Otic gel formulation</li>
+                                    <li>PEGylated formulation</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Delta Id Inc</td>
+                            <td>
+                                <ul>
+                                    <li>Eale disease</li>
+                                    <li>Egg hypersensitivity</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>VEGF ligand modulator</li>
+                                    <li>26S proteasome regulatory subunit RPN inhibitor</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Promoters and cis-acting control elements</li>
+                                    <li>Protein recombinant</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Desktop Metal Inc</td>
+                            <td>
+                                <ul>
+                                    <li>Dyskeratosis congenita</li>
+                                    <li>Dysthymic disorder</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>5-HT 1a receptor antagonist</li>
+                                    <li>Acyl CoA synthetase short-chain 2 inhibitor</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Nucleotide and derivatives</li>
+                                    <li>Osteogenic potential stem cell therapy</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Edinburgh Molecular Imaging Ltd</td>
+                            <td>
+                                <ul>
+                                    <li>Dyskeratosis congenita</li>
+                                    <li>Cystic fibrosis</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Beta adrenoceptor agonist</li>
+                                    <li>Axonemal beta dynein heavy chain 3 modulator</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Peptide</li>
+                                    <li>Peptide library</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Flodesign Sonics Inc</td>
+                            <td>
+                                <ul>
+                                    <li>Degenerative disc disease</li>
+                                    <li>Dengue virus infection</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Beta 2 adrenoceptor antagonist</li>
+                                    <li>Beta amyloid synthesis inhibitor</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Powder formulation dermatological</li>
+                                    <li>Reductional synthesis</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Foxhollow Technologies Inc</td>
+                            <td>
+                                <ul>
+                                    <li>Endocrine disease</li>
+                                    <li>Enterobacter aerogenes infection</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Beta-catenin modulator</li>
+                                    <li>30S ribosomal protein inhibitor</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>Ring expansion synthesis</li>
+                                    <li>RNA sequencing technology</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            function downloadCSVFile(csv, filename) 
+            {
+                var csv_file, download_link;
+                csv_file = new Blob([csv], {type: "text/csv"});
+                download_link = document.createElement("a");
+                download_link.download = filename;
+                download_link.href = window.URL.createObjectURL(csv_file);
+                download_link.style.display = "none";
+                document.body.appendChild(download_link);
+                download_link.click();
+            }
+        
+            document.getElementById("download-button").addEventListener("click", function () {
+                var html = document.querySelector("table").outerHTML;
+                htmlToCSV(html, "websiteData.csv");
+            });
+        
+            function htmlToCSV(html, filename) 
+            {
+                var data = [];
+                var rows = document.querySelectorAll("table tr");
+                for (var i = 0; i < rows.length; i++) {
+                    var row = [], cols = rows[i].querySelectorAll("td, th");
+                    for (var j = 0; j < cols.length; j++) {
+                        row.push(cols[j].innerText);
+                    }
+                                
+                    data.push(row.join(","));		
+                }
+        
+                    //to remove table heading
+                    //data.shift()
+        
+                downloadCSVFile(data.join("\n"), filename);
+            }
+        </script>
+    </body>
+</html>
