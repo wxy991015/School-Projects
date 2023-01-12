@@ -1,5 +1,5 @@
-Lab 8: Final Web Application
-Thinking Process:
+Lab 8: Final Web Application<br/>
+Thinking Process:<br/>
 Step 1:
 Fix issues from Lab6. Through the comments of TA, my put functionality does not work properly for PUT. Therefore, I have
 to fix those issues before I do anything else.<br/>
