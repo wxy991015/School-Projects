@@ -1,4 +1,4 @@
-Lab 8: Final Weather Web Application<br/>
+# Weather Web Application<br/>
 This is a project from a school lab. I started from the beginning of the semester, continuing building new functionalities and add new components of the application until the end of the semester, from simple pieces and seperate components to a complete, workable application. This application is basically a weather application. I mostly used Angular, JavaScript, MongoDB, CSS to complete this application. It is a very simple-to-use application which only contains one fill-in-blank and four buttons. The user can either get, add, update, or delete the weather based on their input, which can be either city name or zip code, and they are all case insensitive. I use Angular Material package to generate tags based on the result of output, showing users whether their operations are successful or not. 
 
 Thinking Process:<br/>
