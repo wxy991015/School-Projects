@@ -32,9 +32,6 @@ application to make it more colorful and appealing. Second, I need to add alert 
 very easily. Third, to display those weather data, I use Angular Material Card and Grid System to display those data in a more clear
 and readable way.<br/>
 
-ZAP Report:
-I include a report called Lab 8 Zap.html in my Lab8 folder.
-
 External Resources:<br/>
 https://www.w3schools.com/jsref/jsref_localecompare.asp<br/>
 https://dmitripavlutin.com/how-to-compare-objects-in-javascript/<br/>
