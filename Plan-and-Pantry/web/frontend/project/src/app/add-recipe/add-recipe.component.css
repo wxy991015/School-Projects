@@ -1,0 +1,15 @@
+.name {
+  background-color: rgba(255, 184, 0, 255);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.ing {
+  border-radius: 10px;
+  border: 1px solid #abc;
+}
+
+.container {
+  max-width: 100%;
+}

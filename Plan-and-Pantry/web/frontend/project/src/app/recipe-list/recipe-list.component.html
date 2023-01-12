@@ -1,0 +1,30 @@
+<nav class="name">
+  <h1 class="ttle">Plan & Pantry</h1>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col" style="max-width: 240px;">
+      <app-sidebar class="sticky-top"></app-sidebar>
+    </div>
+
+    <div class="col col-md">
+      <mat-card style="margin-top:20px">
+        <mat-card-content style="padding: 20px;">
+          <h3>Favorite Lists</h3>
+          <mat-form-field class="example-full-width">
+            <span matPrefix> </span>
+            <input type="tel" matInput placeholder="Search" name="search">
+            <button matSuffix mat-button>
+              <mat-icon>search</mat-icon>
+            </button>
+          </mat-form-field>
+          <ul style="text-decoration: none;">
+            <li *ngFor="let recipe of recipes; let i = index; trackBy: trackBy"><a [href]="'/recipe/' + recipe._id">{{recipe.name}}</a></li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
+
+    </div>
+  </div>
+</div>

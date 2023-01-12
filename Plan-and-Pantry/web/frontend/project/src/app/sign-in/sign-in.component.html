@@ -1,0 +1,51 @@
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <nav class="navbar">
+        <h1 class="ttle">Welcome to<br>Plan & Pantry</h1>
+    </nav>
+    <mat-card>
+        <mat-card-content>
+            <div class="header">
+                <h2>Log in</h2>
+            </div>
+            <form (ngSubmit)="onLogin()" name="loginForm" [formGroup]="loginForm">
+                <div class="email-input">
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input formControlName="email" #username matInput required />
+                        <mat-error *ngIf="loginForm.get('email').errors?.required">
+                            Required User Name
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input formControlName="password" #password matInput [type]="hide ? 'password' : 'text'" required />
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'"
+                            [attr.aria-pressed]="hide">
+                            <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+                        </button>
+                        <mat-error *ngIf="loginForm.get('password').errors?.required">
+                            Required Password
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <a class="aLink" style="color: black;" routerLink="../forgetPassword-component">Forgot Password?</a>
+                </div>
+
+                <div>
+                    <button style="margin: 20px;" mat-flat-button color="primary"
+                        (click)="authService.SignIn(username.value, password.value)" [disabled]="!loginForm.valid">Login</button>
+                    <button type="button" mat-flat-button color="primary" (click)="authService.GoogleAuth()">
+                        <i class="fab fa-google-plus-g"></i>
+                        Log in with Google
+                    </button>
+                    <button mat-flat-button color="primary" routerLink="../register">New to the app? Create an
+                        account</button>
+                </div>
+            </form>
+
+        </mat-card-content>
+    </mat-card>
+</div>

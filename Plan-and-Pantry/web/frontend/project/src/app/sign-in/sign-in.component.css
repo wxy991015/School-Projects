@@ -1,0 +1,49 @@
+h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.ttle {
+    display: table;    
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: rgba(255,184,0,255);
+}
+
+.carousel {
+    height: 450px;
+    background-color : rgba(10,92,115,255);
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5%;
+  }
+
+.mat-card{
+    max-width: 600px;
+    margin: 2em auto;
+    text-align: center;
+    max-height: 600px;
+}
+.header{
+    text-align: center;
+}
+
+.full-width{
+    width: 80%;
+}
+
+.forgot-password{
+    padding-left: 0px;
+}
+
+.email-input{
+    padding-top: 10px;
+}
+
+.aLink{
+    float: left;
+    padding-left: 60px;
+    text-decoration: none;
+}

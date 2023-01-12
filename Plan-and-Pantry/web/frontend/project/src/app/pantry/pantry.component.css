@@ -1,0 +1,41 @@
+.ingredient {
+	width: 10rem;
+	text-align:  center;
+}
+
+.col {
+  margin-right: 3px;
+  margin-left: 3px;
+  }
+
+.section_name {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: -5px;
+}
+
+.addBar {
+  display: inline-block;
+  width: 90%;
+}
+
+input {
+  width: 50%;
+}
+
+button {
+  margin-left: -20%;
+}
+
+.container {
+  max-width:  100%;
+}
+
+.name {
+  background-color: rgba(255, 184, 0, 255);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}

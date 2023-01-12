@@ -1,0 +1,95 @@
+<nav class="name">
+  <h1 class="ttle">Create New Recipe</h1>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col" style="max-width: 240px;">
+      <app-sidebar class="sticky-top"></app-sidebar>
+    </div>
+
+    <div class="col col-md">
+
+      <div class="ing" style="margin-top: 20px; margin-bottom: 20px;">
+        <div style="margin-left: 10px;">
+          <div class="left" style="line-height: 1.8;">
+            <h2>Create New Recipe</h2>
+            <p>
+              Title: <input type="text" required #title>
+            </p>
+
+            <div>Total Time (mins) : <input type="number" id="input_time" name="input_time" min="0" required #total_time>
+              <p></p>
+              <p style="text-indent: 10px">Prep Time: <input type="number" id="prep_time" name="prep_time" min="0" required #prep_time>
+              </p>
+              <p style="text-indent: 10px">Cook Time: <input type="number" id="cook_time" name="cook_time" min="0" required #cook_time>
+              </p>
+              <p>Servings: <input type="number" id="servings" name="servings" required #servings> people</p>
+
+              <p>
+                Category: <input type="text" required #category>
+              </p>
+            </div>
+            <hr>
+            <div>
+              <h2>Ingredients</h2>
+              <button class="btn btn-primary" type="button" (click)="addIngredient()">Add Ingredient</button>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Measurement</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let ingredient of ingredients; let i = index; trackBy: trackBy">
+                    <th scope="row"><input type="text" [(ngModel)]="ingredients[i]['name']" required></th>
+                    <td><input type="number" name="ingredient" [(ngModel)]="ingredients[i]['amount']" required></td>
+                    <td>
+                      <input type="text" [(ngModel)]="ingredients[i]['measurement']" required>
+                    </td>
+                    <td><button class="btn btn-danger" type="button" (click)="removeIngredient(i)">Remove</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <hr>
+          </div>
+
+          <h2>Instructions</h2>
+          <div *ngFor="let instruction of instructions; let i = index; trackBy: trackBy">
+            <textarea cols="40" rows="5" [(ngModel)]="instructions[i]"></textarea>
+            <br>
+          </div>
+          <button class="btn btn-primary" type="button" (click)="addInstruction()">Add Instruction</button>
+
+          <hr>
+          <h2>Upload an image of the food for the recipe</h2>
+          <div class="text-center">
+            <input class="form-control" type="file" (change)="onChange($event)">
+
+            <button (click)="onUpload()" class="btn btn-outline-info" type="button">Upload</button>
+          </div>
+
+          <!-- Shareable short link of  uoloaded file -->
+          <div class="container text-center jumbotron" *ngIf="shortLink">
+            <h2> Visit Here</h2>
+            <a href="{{shortLink}}">{{shortLink}}</a>
+          </div>
+
+          <!--Flag variable is used here-->
+          <div class="container" *ngIf="loading">
+            <h3>Loading ...</h3>
+          </div>
+
+          <!-- The button below will be used to submit the recipe to the db. -->
+          <button class="btn btn-success" type="button"
+            (click)="addRecipe(title.value, total_time.value, prep_time.value, cook_time.value, servings.value, category.value)">Submit</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
