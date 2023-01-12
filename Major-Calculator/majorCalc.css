@@ -1,0 +1,178 @@
+h1{
+   text-align: center;
+   color: #D3D3D3;
+   background-color: #c28285; 
+   padding: 10px;
+   font: Times New Roman;
+}
+
+body{
+   background-image: url(resources/background.jpg);
+   background-size: 350px 350px;
+   background-repeat: repeat;
+   font-family: sans-serif;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+
+}
+
+div footer {
+   position: absolute;
+   width: 100%;
+   height: 80px;
+   right: 0; bottom: 0;left: 0;
+   background-color: #FFDDF4;
+}
+
+div footer p{
+   background-color: #FFDDF4;
+}
+
+.sidebar {
+   margin-left: 600px; 
+   margin-right: 10px;
+   position: absolute; 
+   top: 0; 
+   right: 0; 
+   }
+.sidebar .wrapper { 
+   font: 15px Trattatello, sans-serif; 
+   padding: 10px; 
+   margin-top: 150px; 
+   width: 130px;
+   color:#000; 
+   background-color: #F9CCCA;
+   border-style: solid;
+   }
+.sidebar h3.select { 
+   margin: 10px 0 5px 0; 
+   width: 97px; 
+   height: 16px; 
+   text-indent: 100%;
+   overflow: hidden;
+   }
+.sidebar h3.archives { 
+   margin: 25px 0 5px 0; 
+   width:57px; 
+   height: 14px; 
+
+   text-indent: 100%;
+   overflow: hidden;
+   }
+.sidebar h3.resources { 
+   margin: 25px 0 5px 0; 
+   width:63px; 
+   height: 10px; 
+
+   text-indent: 100%;
+   overflow: hidden;
+   }
+
+.sidebar ul {
+   margin: 0;
+   padding: 0;
+
+   }
+.sidebar li {
+   line-height: 1.3em;  
+   display: block; 
+   padding-top: 5px; 
+   margin-bottom: 5px;
+   list-style-type: none;
+   border-bottom-style: dotted; 
+   font-family: 'Chakra Petch', sans-serif;
+   color:   #FF91AF;
+   }
+.sidebar li a:link {
+   color: #FC89AC;
+   }
+.sidebar li a:visited {
+   color: #FF69B4;
+   }
+
+.mainBody{
+   flex: 1;
+}
+
+.row {
+   margin-top: 10%;
+   margin-left: 20%;
+}
+
+.logo {
+   border: none;
+   padding-left: 4px;
+   width: 32px; height: 32px;
+}
+
+.box {
+   background-color: white;
+   padding-top: 25px;
+   padding-bottom: 25px;
+   margin: auto;
+}
+.box p{
+   text-align: center;
+}
+
+.column {
+   width: 30%;
+   float: left;
+   vertical-align: middle;
+   text-align: center;
+}
+
+.column-content {
+   position: center;
+}
+
+.second-column {
+   width: 55%;
+   float: left;
+   vertical-align: middle;
+   text-align: center;
+}
+
+.third-column {
+   width: 15%;
+   float: right;
+   vertical-align: middle;
+   text-align: center;
+}
+
+.logo {
+   border: none;
+   padding-left: 4px;
+   width: 32px; height: 32px;
+}
+
+.box p{
+   text-align: center;
+}
+
+
+input {
+   width: 100%;
+}
+
+#result {
+   display: none;
+}
+div form{
+   width: 50%;
+   padding: 25px;
+   margin: auto;
+}
+#result {
+   text-align: center;
+}
+.heart {
+   margin: auto;
+   padding-top: 50px;
+   position: center;
+
+}
+#mList {
+   text-align: right;
+}

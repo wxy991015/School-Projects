@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <title>Major Matcher</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+   <link href="majorCalc.css"
+      rel="stylesheet"
+      type="text/css"/>
+      <script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
+      <script type="text/javascript" src="resources/bestCalc.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:600" rel="stylesheet">
+</head>
+<body>
+   <div class="mainBody">
+      <h1>Undergraduate Major Matcher</h1>
+      <form method="get" class="box">
+         <p>Please enter a name to be analyzed:</p>
+         <table align="center">
+            <tbody>
+               <tr>
+                  <th>
+                     <label for="name">Full Name of Person</label>
+                  </th>
+                  <th></th>
+                  <th></th>
+               </tr>
+               <tr>
+                  <td>
+                     <input type="text" name="name" id="name" size="30" value=""autofocus placeholder="Name of Person"/>
+                  </td>
+                  <td>
+                     <img src="resources/rpi.png" class="logo">
+                  </td>
+                  <td>
+                     <button type="button" id="calculate">Calculate!</button>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         <table align="center" class="results">
+            <tr>
+               <th>
+                  <p id="mList"></p>
+               </th>
+            </tr>
+         </table>
+      </form> 
+   </div>
+   <div class="heart">
+      <img src="resources/heart.gif" style="width: 150px; height: 150px;">
+   </div>
+   <div class="footer">
+      <footer>
+         <p><strong>Disclaimer:</strong> It's not possible to get a hundred percent probabilty, therefore there's no guarantee of any kind that the relationship will work out between the major and person. No record is being kept of any information entered by the user of this program. The creators of this program are in no way liable of any actions which might be taken by users of this program. Please note that this site has no serious intention whatsoever.</p>
+      </footer>
+   </div>
+</body>
+
+<aside class="sidebar" role="complementary">
+      <div class="wrapper">
+         <div class="design-selection" id="design-selection">
+            <nav role="navigation">
+               <ul>
+               <li>
+                  <a href="https://www.rpi.edu" class="rpi">Rpi Website</a>
+               </li>             <li>
+                  <a href="https://admissions.rpi.edu" class="design-name">Admissions</a>
+               </li>             <li>
+                  <a href="index.html" class="design-name">Major Calculator</a>
+               </li>             <li>
+                  <a>Coming soon...</a>
+               </li>             <li>
+                  <a>Graduate Calculator</a>
+               </li>             <li>
+                  <a>Minor calculator</a>
+               </li>             <li>
+                  <a>Concentration Calculator</a>
+               </li>             </ul>
+            </nav>
+         </div>
+      </div>
+</aside>
+
+</html>
