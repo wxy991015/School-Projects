@@ -33,12 +33,12 @@ and readable way.<br/>
 ZAP Report:
 I include a report called Lab 8 Zap.html in my Lab8 folder.
 
-External Resources:
-https://www.w3schools.com/jsref/jsref_localecompare.asp
-https://dmitripavlutin.com/how-to-compare-objects-in-javascript/
-https://thispointer.com/get-the-first-key-value-property-of-a-javascript-object/
+External Resources:<br/>
+https://www.w3schools.com/jsref/jsref_localecompare.asp<br/>
+https://dmitripavlutin.com/how-to-compare-objects-in-javascript/<br/>
+https://thispointer.com/get-the-first-key-value-property-of-a-javascript-object/<br/>
 https://www.w3schools.com/bootstrap/bootstrap_alerts.asp
 
-Author: Xiaoyang Wei
-Course: Web Science Systems Development
+Author: Xiaoyang Wei<br/>
+Course: Web Science Systems Development<br/>
 Due Date: April 15th, 2022
