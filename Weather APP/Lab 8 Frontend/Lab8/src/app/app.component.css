@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+    color:dodgerblue;
+    font-family: 'Henny Penny', cursive;
+    margin-top: 20px;
+}
+
+#bodyblock {
+    background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 5%;
+}
+
+.mat-card-title {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Beau Rivage', cursive;
+}
+
+.mat-card-subtitle {
+    text-align: center;
+}

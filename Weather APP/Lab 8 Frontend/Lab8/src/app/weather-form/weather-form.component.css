@@ -1,0 +1,17 @@
+.row {
+    border: 5px double black;
+    border-radius: 5px;
+    padding: 20px;
+    width: 80%;
+    margin-left: 10%;
+    height: 50%;
+    font-size: larger;
+}
+
+input {
+    margin: 20px;
+}
+
+label {
+    font-family: 'Libre Baskerville', serif;
+}

@@ -1,0 +1,63 @@
+<div class="row">
+    <label>Enter a city name:</label>
+    <input style="width: 90%; margin-left: 5%; margin-bottom: 10px;" type="text" name = "description" placeholder="Enter a city name here..." [(ngModel)]="inputCity"><br>
+     <br/>
+    <button class="input-group-text btn btn-out-primary btn-primary" (click)="getRequest()" style="width: 15%; margin-right: 10px; margin-left: 150px;" type="button">Get weather data</button>
+    <button class="input-group-text btn btn-out btn-danger" (click)="postRequest()" style="width: 15%; margin-right: 10px;" type="button">Add weather data</button>
+    <button class="input-group-text btn btn-out-warning btn-warning" (click)="putRequest()" style="width: 15%; margin-right: 10px;" type="button">Update Weather Data</button>
+    <button class="input-group-text btn btn-out-success btn-success" (click)="deleteRequest()" style="width: 15%;" type="button">Delete Weather Data</button>
+</div>
+
+<br/>
+<div *ngIf="is_empty" class="alert alert-danger alert-dismissible" role="alert">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    Alert: No input! Please input a city name to get back your data!
+</div>
+
+<div *ngIf="post" class="alert alert-success alert-dismissible" role="alert">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    Success: New data has been successfully added into the dataset!
+</div>
+
+<div *ngIf="put" class="alert alert-success alert-dismissible" role="alert">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    Success: The data is updated successfully!
+</div>
+
+<div *ngIf="cannot_update" class="alert alert-warning alert-dismissible" role="alert">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    Failure: The data cannot get updated, because it is not in the dataset! Please try a new one.
+</div>
+
+<div *ngIf="delete" class="alert alert-success alert-dismissible" role="alert">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    Success: The data has been deleted successfully!
+</div>
+
+<div *ngIf="cannot_delete" class="alert alert-warning alert-dismissible" role="alert">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    Failure: The data you try to delete does not exist in the dataset. Please try a new one.
+</div>
+
+<div *ngIf="cannot_get" class="alert alert-danger alert-dismissible" role="alert">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    Error: The city you entered is not in the exisiting dataset. Please try a new one!
+</div>
+
+<div *ngIf="is_existed" class="alert alert-warning alert-dismissible" role="alert">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    Warning: The city you entered is already in the exisiting dataset!
+</div>
+
+<mat-card *ngIf="weatherData">
+    <div style="background-color: powderblue;">
+        <h2>{{ weatherData.temp}} &#8457;</h2>
+        <mat-card-title>{{ weatherData.cityname }}</mat-card-title>
+        <mat-card-subtitle>{{ weatherData.lat}}, {{ weatherData.lon }}</mat-card-subtitle>
+        <mat-card-content>
+            <i class='fas fa-cloud-rain'></i> Humidity: {{ weatherData.humidity }}<br/>
+            <i class='fas fa-compress-alt'></i> Pressure: {{ weatherData.pressure }}<br/>
+            <i class='fas fa-wind'></i> Wind Speed: {{ weatherData.windspeed }}
+        </mat-card-content>
+    </div>
+</mat-card>
